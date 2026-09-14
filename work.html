@@ -1,121 +1,178 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work — CapturedByDaonte</title>
-  <meta name="description" content="Selected photography work by CapturedByDaonte." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work — CapturedByDaonte</title>
+    <meta
+      name="description"
+      content="Selected photography work by CapturedByDaonte."
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;1,300&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;1,300&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <a href="index.html" class="brand">CapturedByDaonte</a>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        Menu
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html" aria-current="page">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <nav class="site-nav">
-    <a href="index.html" class="brand">CapturedByDaonte</a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="work.html" aria-current="page">Work</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <header class="page-head">
+      <span class="mono-label">Selected Work</span>
+      <h1>Twenty-four frames,<br />no retakes.</h1>
+    </header>
 
-  <header class="page-head">
-    <span class="mono-label">Selected Work</span>
-    <h1>Twenty-four frames,<br />no retakes.</h1>
-  </header>
-
-  <div class="filters" role="tablist" aria-label="Filter work by category">
-    <button class="active" data-filter="all" role="tab" aria-selected="true">All</button>
-    <button data-filter="portrait" role="tab" aria-selected="false">Portrait</button>
-  </div>
-
-  <section class="gallery" id="gallery">
-
-    <div class="gallery-item" data-category="portrait">
-      <img class="plate" src="photos/portrait-01.jpg" alt="Portrait of a young girl in a yellow dress, smiling under trees in a park" />
-      <div class="caption">
-        <span class="title">Afternoon in the Park</span>
-        <span class="cat mono-label">Portrait</span>
-      </div>
+    <div class="filters" role="tablist" aria-label="Filter work by category">
+      <button class="active" data-filter="all" role="tab" aria-selected="true">
+        All
+      </button>
+      <button data-filter="portrait" role="tab" aria-selected="false">
+        Portrait
+      </button>
     </div>
 
-    <div class="gallery-item" data-category="portrait">
-      <img class="plate" src="photos/portrait-02.jpg" alt="Portrait of a woman in a headwrap smiling, standing near the lakeshore at golden hour" />
-      <div class="caption">
-        <span class="title">Lakeside, Golden Hour</span>
-        <span class="cat mono-label">Portrait</span>
+    <section class="gallery" id="gallery">
+      <div class="gallery-item" data-category="portrait">
+        <img
+          class="plate"
+          src="photos/portrait-01.jpg"
+          alt="Portrait of a young girl in a yellow dress, smiling under trees in a park"
+        />
+        <div class="caption">
+          <span class="title">Afternoon in the Park</span>
+          <span class="cat mono-label">Portrait</span>
+        </div>
       </div>
-    </div>
 
-    <div class="gallery-item" data-category="portrait">
-      <img class="plate" src="photos/portrait-03.jpg" alt="Woman with glasses smiling, sitting on breakwater rocks with the lake behind her" />
-      <div class="caption">
-        <span class="title">Perched on the Rocks</span>
-        <span class="cat mono-label">Portrait</span>
+      <div class="gallery-item" data-category="portrait">
+        <img
+          class="plate"
+          src="photos/portrait-02.jpg"
+          alt="Portrait of a woman in a headwrap smiling, standing near the lakeshore at golden hour"
+        />
+        <div class="caption">
+          <span class="title">Lakeside, Golden Hour</span>
+          <span class="cat mono-label">Portrait</span>
+        </div>
       </div>
-    </div>
 
-    <div class="gallery-item" data-category="portrait">
-      <img class="plate" src="photos/portrait-04.jpg" alt="Portrait of a woman in a denim jacket standing by the lake, looking at the camera" />
-      <div class="caption">
-        <span class="title">Shoreline Stance</span>
-        <span class="cat mono-label">Portrait</span>
+      <div class="gallery-item" data-category="portrait">
+        <img
+          class="plate"
+          src="photos/portrait-03.jpg"
+          alt="Woman with glasses smiling, sitting on breakwater rocks with the lake behind her"
+        />
+        <div class="caption">
+          <span class="title">Perched on the Rocks</span>
+          <span class="cat mono-label">Portrait</span>
+        </div>
       </div>
-    </div>
 
-    <div class="gallery-item" data-category="portrait">
-      <img class="plate" src="photos/portrait-05.jpg" alt="Close portrait of a woman in a denim jacket resting her chin on her hand, lake in the background" />
-      <div class="caption">
-        <span class="title">Quiet Moment</span>
-        <span class="cat mono-label">Portrait</span>
+      <div class="gallery-item" data-category="portrait">
+        <img
+          class="plate"
+          src="photos/portrait-04.jpg"
+          alt="Portrait of a woman in a denim jacket standing by the lake, looking at the camera"
+        />
+        <div class="caption">
+          <span class="title">Shoreline Stance</span>
+          <span class="cat mono-label">Portrait</span>
+        </div>
       </div>
-    </div>
 
-    <div class="gallery-item" data-category="portrait">
-      <img class="plate" src="photos/portrait-06.jpg" alt="Portrait of a woman with glasses smiling against a clear blue sky" />
-      <div class="caption">
-        <span class="title">Clear Skies</span>
-        <span class="cat mono-label">Portrait</span>
+      <div class="gallery-item" data-category="portrait">
+        <img
+          class="plate"
+          src="photos/portrait-05.jpg"
+          alt="Close portrait of a woman in a denim jacket resting her chin on her hand, lake in the background"
+        />
+        <div class="caption">
+          <span class="title">Quiet Moment</span>
+          <span class="cat mono-label">Portrait</span>
+        </div>
       </div>
-    </div>
 
-    <div class="gallery-item" data-category="portrait">
-      <img class="plate" src="photos/portrait-07.jpg" alt="Portrait of a woman with sunglasses on her head, standing on a path surrounded by trees" />
-      <div class="caption">
-        <span class="title">Golden Trail</span>
-        <span class="cat mono-label">Portrait</span>
+      <div class="gallery-item" data-category="portrait">
+        <img
+          class="plate"
+          src="photos/portrait-06.jpg"
+          alt="Portrait of a woman with glasses smiling against a clear blue sky"
+        />
+        <div class="caption">
+          <span class="title">Clear Skies</span>
+          <span class="cat mono-label">Portrait</span>
+        </div>
       </div>
-    </div>
 
-    <div class="gallery-item" data-category="portrait">
-      <img class="plate" src="photos/portrait-08.jpg" alt="Profile portrait of a woman sitting among trees at sunset, warm light in the background" />
-      <div class="caption">
-        <span class="title">Sunset, Profile</span>
-        <span class="cat mono-label">Portrait</span>
+      <div class="gallery-item" data-category="portrait">
+        <img
+          class="plate"
+          src="photos/portrait-07.jpg"
+          alt="Portrait of a woman with sunglasses on her head, standing on a path surrounded by trees"
+        />
+        <div class="caption">
+          <span class="title">Golden Trail</span>
+          <span class="cat mono-label">Portrait</span>
+        </div>
       </div>
-    </div>
 
-    <div class="gallery-item" data-category="portrait">
-      <img class="plate" src="photos/portrait-09.jpg" alt="Girl smiling and sitting on the breakwater rocks by the lake, wearing space buns" />
-      <div class="caption">
-        <span class="title">By the Breakwater</span>
-        <span class="cat mono-label">Portrait</span>
+      <div class="gallery-item" data-category="portrait">
+        <img
+          class="plate"
+          src="photos/portrait-08.jpg"
+          alt="Profile portrait of a woman sitting among trees at sunset, warm light in the background"
+        />
+        <div class="caption">
+          <span class="title">Sunset, Profile</span>
+          <span class="cat mono-label">Portrait</span>
+        </div>
       </div>
-    </div>
 
-  </section>
+      <div class="gallery-item" data-category="portrait">
+        <img
+          class="plate"
+          src="photos/portrait-09.jpg"
+          alt="Girl smiling and sitting on the breakwater rocks by the lake, wearing space buns"
+        />
+        <div class="caption">
+          <span class="title">By the Breakwater</span>
+          <span class="cat mono-label">Portrait</span>
+        </div>
+      </div>
+    </section>
 
-  <footer class="site-footer">
-    <span class="mono-label">© 2026 CapturedByDaonte</span>
-    <ul class="socials mono-label">
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
-    </ul>
-  </footer>
+    <footer class="site-footer">
+      <span class="mono-label">© 2026 CapturedByDaonte</span>
+      <ul class="socials mono-label">
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a
+            href="https://www.instagram.com/capturedbydaonte/"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
